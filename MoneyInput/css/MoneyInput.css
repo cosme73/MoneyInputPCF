@@ -1,0 +1,65 @@
+/* =============================================
+   PCF MoneyInput — Estilos
+   Estrategia de tamaño:
+   - width y height se aplican en PX directamente
+     desde updateView() usando context.mode.allocatedWidth
+     y context.mode.allocatedHeight.
+   - PCF inyecta divs intermedios con display:block
+     que rompen cualquier herencia de height:100%.
+     Por eso no usamos herencia, sino px directos.
+   ============================================= */
+
+/* 1. Contenedor raíz del PCF — layout auxiliar */
+.MoneyInput {
+    overflow: hidden;
+}
+
+/* 2. Nuestro wrapper: recibe width/height en px desde TS.
+      Solo necesita definir su layout interno (grid). */
+.money-input-container {
+    display: grid;
+    grid-template-columns: auto 1fr;  /* símbolo | campo */
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 3. Símbolo de moneda */
+.money-input-currency {
+    padding-left: 8px;
+    padding-right: 4px;
+    font-weight: 500;
+    color: inherit;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* 4. Campo de texto */
+.money-input-field {
+    width: 100%;
+    height: 100%;           /* ocupa toda la celda del grid */
+    margin: 0;
+    padding: 0 0 0 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    font-family: inherit;
+    min-width: 0;           /* evita overflow horizontal en grid */
+}
+
+/* ─── Modos de visualización ─── */
+.view-mode .money-input-field {
+    pointer-events: none;
+}
+.view-mode {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.disabled-mode {
+    opacity: 0.6;
+    pointer-events: none;
+    background-color: #f3f2f1 !important;
+}
+

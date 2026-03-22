@@ -1,0 +1,15 @@
+  Determinando los proyectos que se van a restaurar...
+  Se omitir?? el proyecto "D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\MoneyInput.pcfproj" porque no se encuentra.
+  Se omitir?? el proyecto "D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\MoneyInput.pcfproj" porque no se encuentra.
+  Todos los proyectos est??n actualizados para la restauraci??n.
+C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2189,5): warning MSB9008: el ..\MoneyInput.pcfproj de proyecto al que se hace referencia no existe. [D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\Solutions\Solutions.cdsproj]
+C:\Users\cosme\.nuget\packages\microsoft.powerapps.msbuild.solution\1.52.1\build\Microsoft.PowerApps.MSBuild.Solution.targets(98,5): error MSB3202: No se encuentra el archivo del proyecto "..\MoneyInput.pcfproj". [D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\Solutions\Solutions.cdsproj]
+
+ERROR al compilar.
+
+C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2189,5): warning MSB9008: el ..\MoneyInput.pcfproj de proyecto al que se hace referencia no existe. [D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\Solutions\Solutions.cdsproj]
+C:\Users\cosme\.nuget\packages\microsoft.powerapps.msbuild.solution\1.52.1\build\Microsoft.PowerApps.MSBuild.Solution.targets(98,5): error MSB3202: No se encuentra el archivo del proyecto "..\MoneyInput.pcfproj". [D:\Proyectos\PA React Componentes\MoneyInput\MoneyInput\Solutions\Solutions.cdsproj]
+    1 Advertencia(s)
+    1 Errores
+
+Tiempo transcurrido 00:00:01.03
