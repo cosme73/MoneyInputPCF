@@ -94,9 +94,9 @@ export class MoneyInput implements ComponentFramework.StandardControl<IInputs, I
             }
             
             // Apply neutral base styles
-            this._inputContainer.style.borderRadius = "4px";
+            this._inputContainer.style.borderRadius = "10px";
             this._inputContainer.style.backgroundColor = "#FFFFFF";
-            this._inputContainer.style.borderColor = "#CCCCCC";
+            this._inputContainer.style.borderColor = "#000000";
             this._inputContainer.style.borderWidth = "1px";
             this._inputContainer.style.borderStyle = "solid";
             
@@ -113,12 +113,13 @@ export class MoneyInput implements ComponentFramework.StandardControl<IInputs, I
             this._inputContainer.style.paddingRight = "8px";
             this._inputContainer.style.paddingTop = "0px";
             this._inputContainer.style.paddingBottom = "0px";
-            this._inputElement.style.textAlign = "left";
+            this._inputElement.style.textAlign = "right";
 
             // Remover estilos de posicion absoluta del TS para volver al flow normal
             this._currencySpan.style.position = "";
             this._currencySpan.style.left = "";
-            this._inputElement.style.paddingLeft = "4px";
+            this._inputElement.style.paddingLeft = "0px";
+            this._inputElement.style.paddingRight = "4px";
 
             // --- 2. Display Mode Logic ---
             // 0=Edit, 1=View, 2=Disabled
